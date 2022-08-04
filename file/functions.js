@@ -2,6 +2,11 @@
  * http://love.hackerzhou.me
  */
 
+function scrolltest() {
+	var div = document.getElementById("text");
+	div.scrollTop = div.scrollHeight;
+}
+
 // variables
 var $win = $(window);
 var clientWidth = $win.width();
@@ -32,6 +37,7 @@ $(window).resize(function() {
 					clearInterval(timer);
 				}
 			}, 75);
+			scrolltest();
 		});
 		return this;
 	};
